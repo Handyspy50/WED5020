@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Starbites | Products</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
      <header>
@@ -11,30 +14,72 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html" aria-current="page">Products</a></li>
             <li><a href="enquiry.html">Enquiries</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <h1>Our Speciality</h1>
+         
     </nav>
+
+    <div class="logo-container">
+        <img src="images/logo.png.jpg" alt="Starbites Logo">
+    </div>
+
+    <h1 class="page-title">Our Speciality</h1>
+
     <main>
         <h1>Our Menu</h1>
         
-        <section>
-            <h2>Speciality: Bubble Waffles</h2>
-            <p>Fresh waffles with scoops of ice cream, fully loaded with toppings.</p>
+        <section class="product-grid">
+            <div class="product-card">
+                <div class="product-information">
+            <h2>Speciality: Bubble Waffles
+                <span class="price">R35.00</span>
+            </h2>
+            <p>- Fresh waffles with scoops of ice cream, fully loaded with toppings.</p>
+            </div> 
+        </div>
         </section>
 
-        <section>
+         <div class="product-image">
+                <img src="images/banana waffle.png.jpg" alt="bubble waffle">
+            </div>
+            <div class="product-image">
+                <img src="images/og waffle.jpg.jpg" alt="bubble waffle">
+            </div>
+            <div class="product-image">
+                <img src="images/chocolate waffle.png.jpg" alt="bubble waffle">
+            </div>
+
+        <section class="product-grid">
+            <div class="product-card">
             <h2>Drinks</h2>
-            <h3>Milkshakes</h3>
-            <p>Indulge in our rich and creamy milkshakes, available in a variety of flavors.</p>
-            <P>We have Strawberry Starburst, Blue Moon Shake, and the Choco Nova</P>
-            <h3>Refreshers</h3>
-            <p>Quench your thirst with our refreshing beverages, perfect for any occasion.</p>
-            <p>We have a Blueberry Refresher, Watermelon Spritz, and a Mojito</p>
-            <h3>Combo</h3>
-            <p>Enjoy a delightful combination of our bubble waffles and a refreshing drink.</p>
+            <h3>Milkshakes
+            <span class="price">R25.00</span>
+            </h3>
+            <p>- Indulge in our rich and creamy milkshakes, available in a variety of flavors.</p>
+            <P>- We have Strawberry Starburst, Blue Moon Shake, and the Choco Nova</P>
+
+            <h3>Refreshers
+            <span class="price">R15.00</span>
+            </h3>
+            <p>- Quench your thirst with our refreshing beverages, perfect for any occasion.</p>
+            <p>- We have a Blueberry Refresher, Watermelon Spritz, and a Mojito</p>
+            </div>
+        </section>
+
+        <div class="product-image">
+                <img src="images/drinks.jpg.jpg" alt="drinks">
+            </div>
+
+
+            <section class="product-grid">
+            <div class="product-card">
+            <h3>Combo
+            <span class="price">R45.00</span>
+            </h3>
+            <p>- Enjoy a delightful combination of our bubble waffles and a refreshing drink.</p>
+            </div>
         </section>
     </main>
 </header>

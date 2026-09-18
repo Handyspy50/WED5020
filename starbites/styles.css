@@ -1,0 +1,1011 @@
+/* =========================================
+   STAR BITES WEBSITE
+   MAIN CSS
+   ========================================= */
+
+
+/* =========================================
+   1. CSS RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f1e8;
+    color: #3d2b1f;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   2. HEADER
+   ========================================= */
+
+header {
+    background-color: #6b3f2a;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+
+/* =========================================
+   3. NAVIGATION
+   ========================================= */
+
+nav {
+    width: 100%;
+    background-color: #4b2c20;
+}
+
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    padding: 1rem;
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    padding: 0.6rem 1rem;
+
+    border-radius: 0.4rem;
+
+    transition: background-color 0.3s ease;
+}
+
+
+nav a:hover {
+    background-color: #8b542f;
+}
+
+
+nav a:focus {
+    outline: 2px solid white;
+}
+
+
+/* =========================================
+   4. LOGO
+   ========================================= */
+
+.logo-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 1.5rem;
+
+    margin-bottom: 1rem;
+}
+
+
+.logo-container img {
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   5. PAGE TITLE
+   ========================================= */
+
+.page-title {
+    text-align: center;
+
+    font-size: 2.2rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.05rem;
+
+    margin-top: 1rem;
+}
+
+
+/* =========================================
+   6. MAIN CONTENT
+   ========================================= */
+
+main {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 3rem 0;
+}
+
+
+main > h1 {
+    text-align: center;
+
+    color: #6b3f2a;
+
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+}
+
+
+/* =========================================
+   7. PRODUCT CONTAINER
+   ========================================= */
+
+.products-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   8. PRODUCT ROW
+   ========================================= */
+
+.product-row {
+    display: grid;
+
+    grid-template-columns: 1fr 320px;
+
+    width: 100%;
+
+    min-height: 300px;
+
+    background-color: white;
+
+    border-radius: 0.8rem;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   9. PRODUCT INFORMATION
+   ========================================= */
+
+.product-information {
+    padding: 2rem;
+
+    background-color: white;
+}
+
+
+.product-information h2 {
+    color: #6b3f2a;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 0.5rem;
+
+    padding-bottom: 0.6rem;
+
+    border-bottom: 2px solid #d9a66b;
+}
+
+
+.product-information h3 {
+    color: #8b542f;
+
+    font-size: 1.1rem;
+
+    margin-top: 1.2rem;
+
+    margin-bottom: 0.3rem;
+}
+
+
+.product-information p {
+    color: #3d2b1f;
+
+    font-size: 1rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 0.7rem;
+}
+
+
+/* =========================================
+   10. PRODUCT PRICE
+   ========================================= */
+
+.price {
+    display: inline-block;
+
+    background-color: #6b3f2a;
+
+    color: white !important;
+
+    padding: 0.3rem 0.8rem;
+
+    margin-left: 0.5rem;
+
+    border-radius: 2rem;
+
+    font-size: 0.95rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   11. PRODUCT IMAGE
+   ========================================= */
+
+/* ================================
+   PRODUCT IMAGES
+   ================================ */
+
+.product-images {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: nowrap;
+
+    margin-top: 20px;
+}
+
+
+.product-image {
+    width: 280px;
+
+    height: 220px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 12px;
+}
+
+/* =========================================
+   12. OLD PRODUCT CARD SUPPORT
+   ========================================= */
+
+/*
+   This keeps your existing product-card
+   working if you still have some of them
+   in your HTML.
+*/
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+.product-card {
+    background-color: white;
+
+    color: #3d2b1f;
+
+    padding: 2rem;
+
+    border-radius: 0.8rem;
+
+    border: 1px solid #ead5bd;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+.product-card h2 {
+    color: #6b3f2a;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 1rem;
+
+    border-bottom: 2px solid #d9a66b;
+
+    padding-bottom: 0.5rem;
+}
+
+
+.product-card h3 {
+    color: #8b542f;
+
+    margin-top: 1rem;
+
+    margin-bottom: 0.3rem;
+}
+
+
+.product-card p {
+    color: #3d2b1f;
+
+    line-height: 1.6;
+
+    margin-bottom: 0.7rem;
+}
+
+
+/* =========================================
+   13. FORMS
+   ========================================= */
+
+.form-wrapper {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    padding: 2rem;
+
+    border-radius: 0.8rem;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+.form-wrapper h1 {
+    color: #6b3f2a;
+
+    margin-bottom: 1rem;
+}
+
+
+.form-wrapper p {
+    margin-bottom: 1.5rem;
+}
+
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+
+.form-group label {
+    display: block;
+
+    color: #6b3f2a;
+
+    font-weight: bold;
+
+    margin-bottom: 0.4rem;
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    padding: 0.8rem;
+
+    border: 1px solid #c9a98c;
+
+    border-radius: 0.4rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1rem;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+
+    border: 2px solid #6b3f2a;
+}
+
+
+button {
+    background-color: #6b3f2a;
+
+    color: white;
+
+    border: none;
+
+    padding: 0.8rem 1.5rem;
+
+    border-radius: 0.4rem;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #8b542f;
+}
+
+
+/* =========================================
+   14. CONTACT PAGE
+   ========================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+
+.contact-card {
+    background-color: white;
+
+    padding: 2rem;
+
+    border-radius: 0.8rem;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+.contact-card h2 {
+    color: #6b3f2a;
+
+    margin-bottom: 1rem;
+
+    border-bottom: 2px solid #d9a66b;
+
+    padding-bottom: 0.5rem;
+}
+
+
+.contact-card p {
+    line-height: 1.7;
+
+    margin-bottom: 0.8rem;
+}
+
+
+/* =========================================
+   15. FOOTER
+   ========================================= */
+
+footer {
+    background-color: #4b2c20;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   16. LAPTOP / DESKTOP
+   ABOVE 900px
+   ========================================= */
+
+/*
+   The main styles above are used for
+   laptops and desktop computers.
+
+   The layout has:
+   - Navigation across the top
+   - Logo underneath navigation
+   - Product information on the left
+   - Product image on the right
+*/
+
+
+@media (min-width: 901px) {
+
+    nav ul {
+        gap: 2.5rem;
+    }
+
+
+    .product-row {
+        grid-template-columns: 1fr 320px;
+    }
+
+
+    .product-information {
+        padding: 2.5rem;
+    }
+
+
+    .product-image {
+        min-height: 320px;
+    }
+
+}
+
+
+/* =========================================
+   17. TABLET
+   601px - 900px
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        gap: 1rem;
+
+        padding: 0.8rem;
+    }
+
+
+    nav a {
+        font-size: 0.9rem;
+
+        padding: 0.5rem 0.7rem;
+    }
+
+
+    .logo-container img {
+        width: 130px;
+
+        height: 130px;
+    }
+
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+
+    main {
+        width: 92%;
+
+        padding: 2.5rem 0;
+    }
+
+
+    /*
+       Product information and picture
+       remain next to each other on tablet.
+    */
+
+    .product-row {
+        grid-template-columns: 1fr 260px;
+    }
+
+
+    .product-information {
+        padding: 1.5rem;
+    }
+
+
+    .product-information h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .product-information h3 {
+        font-size: 1rem;
+    }
+
+
+    .product-information p {
+        font-size: 0.95rem;
+    }
+
+
+    .product-image {
+        padding: 1rem;
+    }
+
+
+    .product-image img {
+        height: 210px;
+
+        max-width: 220px;
+    }
+
+
+    /*
+       Product cards become two columns
+       on tablet.
+    */
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /*
+       Contact cards become two columns.
+    */
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   18. MOBILE
+   401px - 600px
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .product-images {
+        flex-direction: column;
+    }
+
+
+    /*
+       Navigation becomes easier to use
+       on a phone.
+    */
+
+    nav ul {
+        flex-direction: column;
+
+        gap: 0.3rem;
+
+        padding: 0.8rem;
+    }
+
+
+    nav ul li {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    nav a {
+        display: block;
+
+        width: 100%;
+
+        padding: 0.6rem;
+    }
+
+
+    /*
+       Logo underneath navigation.
+    */
+
+    .logo-container {
+        margin-top: 1rem;
+
+        margin-bottom: 0.8rem;
+    }
+
+
+    .logo-container img {
+        width: 115px;
+
+        height: 115px;
+    }
+
+
+    .page-title {
+        font-size: 1.7rem;
+
+        padding: 0 1rem;
+    }
+
+
+    main {
+        width: 92%;
+
+        padding: 2rem 0;
+    }
+
+
+    main > h1 {
+        font-size: 1.6rem;
+    }
+
+
+    /*
+       Product rows become one column.
+       Picture goes underneath information.
+    */
+
+    .product-row {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+
+    .product-information {
+        padding: 1.5rem;
+    }
+
+
+    .product-information h2 {
+        font-size: 1.4rem;
+
+        line-height: 1.4;
+    }
+
+
+    .product-information h3 {
+        font-size: 1rem;
+    }
+
+
+    .product-information p {
+        font-size: 0.95rem;
+    }
+
+
+    .price {
+        margin-left: 0.2rem;
+
+        margin-top: 0.3rem;
+    }
+
+
+    /*
+       Brown picture section.
+    */
+
+    .product-image {
+        min-height: 260px;
+
+        padding: 1.2rem;
+    }
+
+
+    .product-image img {
+        width: 90%;
+
+        max-width: 280px;
+
+        height: 220px;
+    }
+
+
+    /*
+       Old product cards become
+       one column.
+    */
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /*
+       Contact cards become one column.
+    */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-wrapper {
+        padding: 1.5rem;
+    }
+
+
+    footer {
+        padding: 1.2rem;
+    }
+
+}
+
+
+/* =========================================
+   19. SMALL MOBILE
+   400px AND BELOW
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    html {
+        font-size: 14px;
+    }
+
+
+    nav ul {
+        padding: 0.6rem;
+    }
+
+
+    nav a {
+        font-size: 0.9rem;
+
+        padding: 0.5rem;
+    }
+
+
+    .logo-container img {
+        width: 95px;
+
+        height: 95px;
+    }
+
+
+    .page-title {
+        font-size: 1.5rem;
+
+        padding: 0 0.5rem;
+    }
+
+
+    main {
+        width: 94%;
+
+        padding: 1.5rem 0;
+    }
+
+
+    main > h1 {
+        font-size: 1.4rem;
+    }
+
+
+    .product-information {
+        padding: 1.2rem;
+    }
+
+
+    .product-information h2 {
+        font-size: 1.25rem;
+    }
+
+
+    .product-information h3 {
+        font-size: 0.95rem;
+
+        margin-top: 1rem;
+    }
+
+
+    .product-information p {
+        font-size: 0.9rem;
+
+        line-height: 1.5;
+    }
+
+
+    .price {
+        display: block;
+
+        width: fit-content;
+
+        margin-left: 0;
+
+        margin-top: 0.5rem;
+
+        font-size: 0.85rem;
+    }
+
+
+    .product-image {
+        min-height: 220px;
+
+        padding: 1rem;
+    }
+
+
+    .product-image img {
+        width: 95%;
+
+        height: 180px;
+    }
+
+
+    .product-card {
+        padding: 1.2rem;
+    }
+
+
+    .product-card h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .contact-card {
+        padding: 1.2rem;
+    }
+
+
+    .form-wrapper {
+        padding: 1.2rem;
+    }
+
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 0.9rem;
+
+        padding: 0.7rem;
+    }
+
+
+    button {
+        width: 100%;
+
+        padding: 0.7rem;
+    }
+
+}
