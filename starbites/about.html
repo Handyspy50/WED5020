@@ -1,45 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Starbites and our family-friendly dessert business.">
-    <title>Starbites | About Us</title>
-
-    <!-- External CSS -->
+    <meta name="description" content="Learn about Star Bites, our story, mission and values.">
+    <title>Star Bites | About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="apps.js" defer></script>
 </head>
+
 <body>
-     <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" aria-current="page">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiries</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    
-<div class="logo-container">
-        <img src="images/logo.png.jpg" alt="Starbites Logo">
-    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo-container">
+            <img src="images/logo.png.jpg" alt="Star Bites logo">
+        </div>
 
         <h1 class="page-title">About Star Bites</h1>
-     </header>
+    </header>
 
-     <main>
-        <div class="about-grid">
-            <section class="content-card">
-                <h2>Our Story</h2>
-                <p>Star Bites is a small family-friendly dessert business in Soshanguve that was established early 2026, it specializes in providing delicious and high-quality baked goods to our customers. Our mission is to create a memorable experience for every customer by offering a wide variety of treats that are made with love and care. We are known for our casual, trendy, and inclusive vibe. Star Bites is an excellent spot for kids, groups, and solo dining.</p>
-                <p>At Star Bites, we believe that food is not just about sustenance, but also about bringing people together and creating moments of joy. Whether you're looking for a sweet treat to brighten your day or planning a special event, we are here to make your experience unforgettable. Thank you for choosing Star Bites, and we look forward to serving you!</p>
-            </section>
-        </div>
-     </main>
+    <main>
+        <section class="about-intro content-card">
+            <h2>Who We Are</h2>
+            <p>
+                Star Bites is a small family-friendly dessert business
+                in Soshanguve that was established in early 2026.
+                It specialises in providing delicious and high-quality
+                treats to customers.
+            </p>
+            <p>
+                We aim to create a memorable experience for every
+                customer by offering a variety of treats made with
+                love and care. Our business provides a casual,
+                welcoming and enjoyable environment for everyone.
+            </p>
+        </section>
 
-<footer>
-       <h3>© 2026 Starbites | All Rights Reserved</h3> 
-</footer>
+        <section class="tabs-section">
+            <h2>Discover More About Us</h2>
+
+            <div class="tabs" role="tablist" aria-label="About Star Bites">
+                <button type="button"
+                        class="tab-button"
+                        data-tab-button="story-panel"
+                        role="tab"
+                        aria-selected="true">
+                    Our Story
+                </button>
+
+                <button type="button"
+                        class="tab-button"
+                        data-tab-button="mission-panel"
+                        role="tab"
+                        aria-selected="false">
+                    Our Mission
+                </button>
+
+                <button type="button"
+                        class="tab-button"
+                        data-tab-button="values-panel"
+                        role="tab"
+                        aria-selected="false">
+                    Our Values
+                </button>
+            </div>
+
+            <div class="tab-panel content-card"
+                 id="story-panel"
+                 data-tab-panel
+                 role="tabpanel">
+                <h3>Our Story</h3>
+                <p>
+                    Star Bites was created to bring enjoyable dessert
+                    experiences to our community. We believe that
+                    simple treats can create special memories.
+                </p>
+            </div>
+
+            <div class="tab-panel content-card"
+                 id="mission-panel"
+                 data-tab-panel
+                 role="tabpanel"
+                 hidden>
+                <h3>Our Mission</h3>
+                <p>
+                    Our mission is to provide delicious, affordable
+                    and quality desserts while giving customers
+                    friendly service and a welcoming experience.
+                </p>
+            </div>
+
+            <div class="tab-panel content-card"
+                 id="values-panel"
+                 data-tab-panel
+                 role="tabpanel"
+                 hidden>
+                <h3>Our Values</h3>
+                <p>
+                    We value quality, customer satisfaction,
+                    friendliness, creativity and bringing people
+                    together through good food.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-image-section">
+            <img src="images/strawberry waffle.png.jpg"
+                 alt="A delicious Star Bites waffle">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Star Bites | All Rights Reserved</p>
+    </footer>
+
+    <script src=""apps.js" defer></script>
 </body>
 </html>

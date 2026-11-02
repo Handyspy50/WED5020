@@ -1,46 +1,147 @@
+// Star Bites JavaScript
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Starbites - delicious desserts in a cosy and welcoming enviroment."> 
-    <title>Starbites | Home</title>
- 
-    <!-- External CSS -->
+    <meta name="description" content="Welcome to Star Bites in Soshanguve. Enjoy delicious bubble waffles, milkshakes and refreshing drinks.">
+    <title>Star Bites | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="apps.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <nav>
-        <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiries</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo-container">
+            <img src="images/logo.png.jpg" alt="Star Bites logo">
+        </div>
 
         <h1 class="page-title">Star Bites</h1>
-  </header>
+    </header>
 
-  <div class="logo-container">
-        <img src="images/logo.png.jpg" alt="Starbites Logo">
-    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO STAR BITES</p>
+                <h2>Sweet Moments Start at Star Bites</h2>
+                <p>
+                    Experience the sweetness of our delicious desserts
+                    in a cosy and welcoming environment.
+                </p>
+                <a href="products.html" class="button-link">Explore Our Menu</a>
+            </div>
+        </section>
 
-     <h1 class="page-title">Star Bites</h1>
-  
-     <main>
+        <section class="home-intro content-card">
+            <h2>A Little Something Sweet</h2>
+            <p>
+                At Star Bites, we bring people together through delicious
+                treats. Whether you are craving a freshly made bubble
+                waffle, a creamy milkshake or a refreshing drink, we have
+                something to make your day sweeter.
+            </p>
+            <a href="about.html" class="text-link">Learn more about us</a>
+        </section>
 
-    <section class="hero">
-      <h1>Welcome to Starbites</h1>
-       <p>Experience the sweetness of our delicious desserts in a cozy and welcoming environment.</p>
-       <p class="tagline">Sweet Moments Start at Star Bites</p>
-    </section>
-  </main>
+        <section class="featured-section">
+            <h2>Some of Our Favourites</h2>
+
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <img src="images/banana waffle.png.jpg"
+                         alt="Banana bubble waffle">
+                    <h3>Bubble Waffles</h3>
+                    <p>Fresh waffles with ice cream and delicious toppings.</p>
+                    <p class="price">R35.00</p>
+                </article>
+
+                <article class="featured-card">
+                    <img src="images/drinks.jpg.jpg"
+                         alt="Star Bites drinks">
+                    <h3>Milkshakes</h3>
+                    <p>Rich and creamy milkshakes in different flavours.</p>
+                    <p class="price">R25.00</p>
+                </article>
+
+                <article class="featured-card">
+                    <img src="images/sweet waffle.png.jpg"
+                         alt="Sweet bubble waffle">
+                    <h3>Combo</h3>
+                    <p>Enjoy a waffle together with a refreshing drink.</p>
+                    <p class="price">R45.00</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button type="button"
+                        class="faq-question"
+                        data-accordion-button
+                        aria-expanded="false">
+                    What products does Star Bites offer?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        We offer bubble waffles, milkshakes, refreshers
+                        and combination deals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button"
+                        class="faq-question"
+                        data-accordion-button
+                        aria-expanded="false">
+                    Where is Star Bites located?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        Star Bites is located in Soshanguve, Pretoria.
+                        Visit our Contact page for the address.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button type="button"
+                        class="faq-question"
+                        data-accordion-button
+                        aria-expanded="false">
+                    Can I make an enquiry?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        Yes. Visit our Enquiries page and complete the
+                        enquiry form.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-       <h3>© 2026 Starbites | All Rights Reserved</h3> 
+        <p>&copy; 2026 Star Bites | All Rights Reserved</p>
     </footer>
+
+    <script src=""apps.js" defer></script>
 </body>
 </html>

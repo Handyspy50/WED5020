@@ -1009,3 +1009,365 @@ footer p {
     }
 
 }
+
+/* =========================================
+   PART 3 - ADDITIONAL WEBSITE STYLING
+   ========================================= */
+
+/* Home page hero section */
+.hero {
+    background-color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.hero h1 {
+    color: #6b3f2a;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    color: #8b542f;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+/* Product search and filter controls */
+.product-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.8rem;
+}
+
+.product-controls .form-group {
+    margin-bottom: 0;
+}
+
+
+/* Product rows */
+.product-row {
+    align-items: stretch;
+}
+
+.product-row .product-image {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #6b3f2a;
+    border-radius: 0;
+}
+
+.product-row .product-image img {
+    width: 100%;
+    max-width: 280px;
+    height: 240px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.form-help {
+    color: #765b48;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.no-results {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+
+/* Links styled as buttons */
+.button-link {
+    display: inline-block;
+    background-color: #6b3f2a;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.button-link:hover {
+    background-color: #8b542f;
+}
+
+
+/* About page tabs */
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1.5rem 0;
+}
+
+.tab-buttons button[aria-selected="true"] {
+    background-color: #8b542f;
+    outline: 2px solid #d9a66b;
+}
+
+.tab-panel {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+}
+
+.tab-panel h2 {
+    color: #6b3f2a;
+    margin-bottom: 0.8rem;
+}
+
+.tab-panel p {
+    margin-bottom: 0.8rem;
+}
+
+
+/* FAQ section */
+.faq-section {
+    margin-top: 3rem;
+}
+
+.faq-section > h2 {
+    text-align: center;
+    color: #6b3f2a;
+    margin-bottom: 1.5rem;
+}
+
+.faq-item {
+    background-color: white;
+    border: 1px solid #ead5bd;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+}
+
+.faq-answer {
+    padding: 1rem;
+}
+
+.faq-item.active .faq-question {
+    background-color: #8b542f;
+}
+
+
+/* Form messages */
+.form-message {
+    display: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-message.show {
+    display: block;
+}
+
+.form-message.success {
+    background-color: #e4f4e7;
+    color: #205b2b;
+}
+
+.form-message.error {
+    background-color: #fbe7e7;
+    color: #8b2020;
+}
+
+.estimate-box {
+    background-color: #f8f1e8;
+    border-left: 4px solid #6b3f2a;
+    padding: 1rem;
+    margin: 1.2rem 0;
+    border-radius: 0.4rem;
+}
+
+.estimate-box span {
+    display: block;
+    color: #6b3f2a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.4rem;
+}
+
+
+/* Contact map */
+.map-section {
+    margin: 2rem 0;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.map-section h2 {
+    color: #6b3f2a;
+    margin-bottom: 1rem;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.map-section a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #6b3f2a;
+    font-weight: bold;
+}
+
+
+/* Image lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    padding: 0.2rem 0.8rem;
+}
+
+
+/* Disabled submit button */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* Tablet layout */
+@media (max-width: 900px) {
+    .product-controls {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-row {
+        grid-template-columns: 1fr 260px;
+    }
+
+    .product-row .product-image {
+        min-height: 260px;
+    }
+}
+
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .product-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .product-row {
+        grid-template-columns: 1fr;
+    }
+
+    .product-row .product-image {
+        min-height: 230px;
+    }
+
+    .product-row .product-image img {
+        height: 200px;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .map-section iframe {
+        height: 250px;
+    }
+
+    .lightbox {
+        padding: 1rem;
+    }
+}
+
+
+/* Small mobile layout */
+@media (max-width: 400px) {
+    .product-controls {
+        padding: 1rem;
+    }
+
+    .product-row .product-image {
+        min-height: 200px;
+    }
+
+    .product-row .product-image img {
+        height: 180px;
+    }
+
+    .map-section iframe {
+        height: 220px;
+    }
+}
+
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.content-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.content-card > h2 {
+    color: #6b3f2a;
+    margin-bottom: 1rem;
+}

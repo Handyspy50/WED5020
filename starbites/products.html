@@ -3,88 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbites | Products</title>
-
-    <!-- External CSS -->
+    <meta name="description" content="Explore the Star Bites menu, including bubble waffles, milkshakes and refreshers.">
+    <title>Star Bites | Products</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="apps.js" defer></script>
 </head>
+
 <body>
-     <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html" aria-current="page">Products</a></li>
-            <li><a href="enquiry.html">Enquiries</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-         
-    </nav>
 
-    <div class="logo-container">
-        <img src="images/logo.png.jpg" alt="Starbites Logo">
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
+                <li><a href="enquiry.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <h1 class="page-title">Our Speciality</h1>
+        <div class="logo-container">
+            <img src="images/logo.png.jpg" alt="Star Bites logo">
+        </div>
+
+        <h1 class="page-title">Our Products</h1>
+    </header>
 
     <main>
-        <h1>Our Menu</h1>
-        
-        <section class="product-grid">
-            <div class="product-card">
-                <div class="product-information">
-            <h2>Speciality: Bubble Waffles
-                <span class="price">R35.00</span>
-            </h2>
-            <p>- Fresh waffles with scoops of ice cream, fully loaded with toppings.</p>
-            </div> 
+        <section class="products-intro">
+            <h2>Explore Our Menu</h2>
+            <p>
+                Discover our selection of delicious bubble waffles,
+                drinks and special combinations.
+            </p>
+        </section>
+
+        <section class="product-controls">
+            <div class="form-group">
+                <label for="product-search">Search products</label>
+                <input type="search"
+                       id="product-search"
+                       placeholder="Search for a product...">
+            </div>
+
+            <div class="form-group">
+                <label for="product-category">Choose a category</label>
+                <select id="product-category">
+                    <option value="All">All Products</option>
+                    <option value="Waffles">Waffles</option>
+                    <option value="Drinks">Drinks</option>
+                    <option value="Combos">Combos</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="product-sort">Sort products</label>
+                <select id="product-sort">
+                    <option value="default">Default</option>
+                    <option value="name">Name</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="product-list" class="products-container"
+                 aria-live="polite">
+            <p>Loading products...</p>
+        </section>
+
+        <div id="image-lightbox"
+             class="lightbox"
+             aria-hidden="true">
+            <button type="button"
+                    id="lightbox-close"
+                    class="lightbox-close"
+                    aria-label="Close enlarged image">
+                &times;
+            </button>
+
+            <img id="lightbox-image" src="" alt="">
         </div>
-        </section>
-
-         <div class="product-image">
-                <img src="images/banana waffle.png.jpg" alt="bubble waffle">
-            </div>
-            <div class="product-image">
-                <img src="images/og waffle.jpg.jpg" alt="bubble waffle">
-            </div>
-            <div class="product-image">
-                <img src="images/chocolate waffle.png.jpg" alt="bubble waffle">
-            </div>
-
-        <section class="product-grid">
-            <div class="product-card">
-            <h2>Drinks</h2>
-            <h3>Milkshakes
-            <span class="price">R25.00</span>
-            </h3>
-            <p>- Indulge in our rich and creamy milkshakes, available in a variety of flavors.</p>
-            <P>- We have Strawberry Starburst, Blue Moon Shake, and the Choco Nova</P>
-
-            <h3>Refreshers
-            <span class="price">R15.00</span>
-            </h3>
-            <p>- Quench your thirst with our refreshing beverages, perfect for any occasion.</p>
-            <p>- We have a Blueberry Refresher, Watermelon Spritz, and a Mojito</p>
-            </div>
-        </section>
-
-        <div class="product-image">
-                <img src="images/drinks.jpg.jpg" alt="drinks">
-            </div>
-
-
-            <section class="product-grid">
-            <div class="product-card">
-            <h3>Combo
-            <span class="price">R45.00</span>
-            </h3>
-            <p>- Enjoy a delightful combination of our bubble waffles and a refreshing drink.</p>
-            </div>
-        </section>
     </main>
-</header>
-<footer>
-       <h3>© 2026 Starbites | All Rights Reserved</h3> 
-</footer>
+
+    <footer>
+        <p>&copy; 2026 Star Bites | All Rights Reserved</p>
+    </footer>
+
+    <script src=""apps.js" defer></script>
 </body>
 </html>
